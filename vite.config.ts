@@ -8,8 +8,7 @@ export default defineConfig({
   base:
     process.env.NODE_ENV === "development"
       ? "/"
-      : process.env.VITE_BASE_PATH || "/portfolio/",
-  // Change '/portfolio/' to '/' if deploying to a custom domain
+      : process.env.VITE_BASE_PATH || "/dipto-ray-portfolio/",
   optimizeDeps: {
     entries: ["src/main.tsx", "src/tempobook/**/*"],
   },
